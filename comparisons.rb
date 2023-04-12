@@ -22,24 +22,38 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?",
+number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "is number_teachers equal to string_teachers?",
+number_teachers = string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is number_teachers not equal to number_students?",
+number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?",
+number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students grater than or equal to 21?",
+number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?",
+number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?",
+number_students <= 21
 # this should print: true
 
 
@@ -53,21 +67,24 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#This line of code is evaluating if the number 4 is less than 9. The return would come back True.
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# In the first line we are setting the value of books to 3. We are then evaluating if the number 4 is less then the value
+# of books which is 3. The return will come back false.
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# We are setting our values for friends at 6 and siblings at 2. In our puts statment we are evaluating if 
+# our friends value is grater than our siblings value. The return will come back true.
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# We set the value of attendees to 9 and meals to 8. In our puts statement we are evaluating if the number
+# of attendees is not equal to the number of meals. The return will come back true.
 
 
 #-------------------
@@ -90,15 +107,21 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats 
+#Return - true
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
+#Return - false
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
+#Return - true
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play && is_a_puppy
+puts loves_to_play && age <= 1
+#Return - undefined local variable or method `is_a_puppy'
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: My final line of code was not usable since we have not defined what we consider a puppy. Puppy has no value so we are unable to determine. We could fix this with an if statement. 
+
